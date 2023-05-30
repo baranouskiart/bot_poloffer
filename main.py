@@ -24,7 +24,5 @@ async def get_text_messages(msg: types.Message):
 #     else:
 #         await msg.reply('Reply to a message to use this command.')
 
-
-
 if __name__ == '__main__':
    executor.start_polling(dp)
