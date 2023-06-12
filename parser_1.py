@@ -22,10 +22,12 @@ def find_jobs():
             salary = job.find('div', class_ = 'g-job-salary')
             town2 = job.find('div', class_='g-job-location__title')
             town = job.find('div', class_='g-job-location--wrapper')
-            print(f"{c_name} : {salary}")
             with open(f'posts.txt', 'w') as f:
                 f.write(f"Company name: {c_name.strip()}")
                 f.write(f"Salary: {salary.strip()}")
+    return jobs
+    
+
         
 if __name__ == "__main__":
     while True:
